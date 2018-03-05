@@ -1,0 +1,6 @@
+name: GeoCraft
+version: 1.0-SNAPSHOT
+description: Geolocation SDK
+author: Cryptobyte
+website: https://gitlab.com/SkyNetwork/Spigot/GeoCraft
+main: org.lawlsec.geocraft.GeoCraft
