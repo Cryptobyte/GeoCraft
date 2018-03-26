@@ -5,7 +5,6 @@ import com.maxmind.geoip.LookupService;
 import com.maxmind.geoip.timeZone;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
-import sun.util.logging.PlatformLogger;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
@@ -37,7 +36,7 @@ public class GeoCraft extends JavaPlugin {
     @Override
     public void onDisable() { }
 
-    private static Location getLocation(InetSocketAddress address) {
+    public static Location getLocation(InetSocketAddress address) {
         return service.getLocation(address.getAddress().toString().split("/")[1]);
     }
 
